@@ -1,0 +1,48 @@
+{
+  "name": "@avstantso/avstantso-serialize-set-1-300",
+  "license": "MIT",
+  "version": "1.0.0",
+  "private": true,
+  "author": "avstantso",
+  "description": "Serialize/Deserialize array of 1-300 with compression",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avstantso/avstantso-serialize-set-1-300"
+  },
+  "scripts": {
+    "mon": "nodemon",
+    "start": "yarn ts-node ./src/index.ts",
+    "build": "tsc -p tsconfig-build.json",
+    "test": "NODE_ENV=test jest --coverage --runInBand",
+    "test:log": "yarn test > log.txt",
+    "prettier": "prettier",
+    "prettier:format": "yarn prettier --write \"{,src/**/}*.{md,json,ts,tsx,css,scss,yml}\"",
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "yarn lint -- --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.27.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "globals": "^16.1.0",
+    "jest": "^30.0.3",
+    "jest-util": "^30.0.2",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  },
+  "dependencies": {
+    "@yarnpkg/pnpify": "^4.0.0-rc.6",
+    "cross-env": "^7.0.3"
+  },
+  "packageManager": "yarn@4.9.2"
+}
